@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHRYSTELHA - Home</title>
+    <style>
+        /* CSS code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: #FFC0CB;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-toggle .menu-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      background-color: #333333;
+      width: 100%;
+      padding: 20px;
+      z-index: 1;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav li {
+      margin: 10px 0;
+    }
+    
+    .mobile-menu-toggle {
+      display: block;
+    }
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .mantra {
+    font-size: 18px;
+  }
+  
+  .message-to-fans {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  .call-to-action {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .social-media-icons a {
+    margin: 0 20px;
+  }
+  
+  .social-media-icons i {
+    font-size: 36px;
+    color: #333333;
+  }
+  
+  .social-media-icons i:hover {
+    color: #FFC0CB;
+  }
+  
+  section {
+    margin: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-container {
+    position: relative;
+  }
+  
+  .slideshow-container {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .slideshow-slide {
+    min-width: 100%;
+  }
+  
+  .slideshow-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .slideshow-prev, .slideshow-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .slideshow-prev {
+    left: 20px;
+  }
+  
+  .slideshow-next {
+    right: 20px;
+  }
+  
+  .slideshow-prev:hover, .slideshow-next:hover {
+    background-color: #FFC0CB;
+  }
+    </style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero-section">
+			<h1>CHRYSTELHA</h1>
+			<p class="mantra">Comparison Kills</p>
+			<p class="message">I am excited to share with you the different projects that I have been working on. I hope that you enjoy it as much as I enjoyed making it.</p>
+			<button class="follow-btn">Follow me on social media</button>
+		</section>
+
+		<section class="gallery-section">
+			<h2>My Work</h2>
+			<div class="gallery">
+				<div class="item">
+					<img src="img1.jpg" alt="Image 1">
+				</div>
+				<div class="item">
+					<img src="img2.jpg" alt="Image 2">
+				</div>
+				<div class="item">
+					<video src="video1.mp4" controls></video>
+				</div>
+				<div class="item">
+					<audio src="audio1.mp3" controls></audio>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 CHRYSTELHA. All rights reserved.</p>
+	</footer>
+    <script>
+        <script>
+// Add a click event listener to the "Follow me on social media" button
+document.querySelector('.follow-btn').addEventListener('click', function() {
+	// Replace the URL below with your artist's social media profile URL
+	window.open('https://www.instagram.com/chrystelhajp/')
+})
+</script>
+    </script>
+</body>
+</html>
